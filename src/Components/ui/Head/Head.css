@@ -1,0 +1,35 @@
+.custom-head{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    margin-left: 5em;
+    padding: 1rem 0rem;
+    font-size: xx-large;
+}
+
+@media (max-width:1024px){
+    .custom-head{
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    .custom-head{
+        font-size: x-large;
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:480px){
+    .custom-head{
+        margin-left: 3rem;
+        /* font-size: x-large; */
+    }
+}
+
+@media (max-width:480px){
+    .custom-head{
+        margin-left: 2rem;
+        font-size: larger;
+    }
+}

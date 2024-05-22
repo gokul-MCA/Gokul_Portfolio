@@ -1,0 +1,33 @@
+
+.custom-button {
+    background:#0bf40a;
+    color:black; 
+    border: none;
+    border-radius: 2rem;
+    margin: 0rem;
+    padding: 0.75em 1.2em;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition:0.2s;
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 15rem;
+}
+  
+.custom-button:hover {
+    filter: drop-shadow(0 0 .75em #0bf40a);
+    transform: scale(1.1);
+    transition: 0.1s;
+    background: white; 
+}
+
+@media (max-width:480px){
+    .custom-button,.custom-button:hover{
+        font-size: .8em;
+    }
+}
+

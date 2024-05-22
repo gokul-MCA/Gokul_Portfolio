@@ -1,0 +1,56 @@
+#timeline{
+    width: 96vw;
+    height: 100vh;
+}
+.time{
+    width: 70vw;
+    height: auto;
+    padding: 0rem 8rem;
+}
+
+.my-card{
+    color: white !important;
+    padding: 10px;
+    border: 1px solid #0bf40a;
+    text-align: justify!important;
+    font-family: inherit;
+    height: auto!important;
+}
+/* .my-card-text{
+    color:white !important;
+}
+.my-controls{
+    color: white !important;
+    background: red!important;
+    border: 1.5px solid blue;
+} */
+
+.my-card-title{
+    color: #0bf40a!important;
+    padding: .5rem;
+    font-size: large!important;
+    /* border: 1px solid orange; */
+}
+.my-card-subtitle{
+    color:white !important;
+    padding: .5rem;
+    font-size: medium!important;
+}
+.my-card-detailedtext{
+    padding: 0rem;
+    color: white;
+}
+
+@media (max-width:1024px){
+    .time{
+        padding: 0rem!important;
+        width: 90%!important;
+        margin: 0rem!important;
+    }
+}
+
+@media (max-width:768px){
+    .time{
+        width: 60%!important;
+    }
+}

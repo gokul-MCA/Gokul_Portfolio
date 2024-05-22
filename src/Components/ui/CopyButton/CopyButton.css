@@ -1,0 +1,23 @@
+.copy-button {
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .copy-button:hover {
+    background: white;
+    color: black;
+  }
+  
+  .copy-text {
+    display: inline-block;
+    width: 60px; /* Adjust width as necessary */
+    text-align: left;
+  }
