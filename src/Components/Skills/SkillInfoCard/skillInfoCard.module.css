@@ -1,0 +1,83 @@
+.skillsinfocard{
+    /* min-height: 10rem; */
+    border-radius: .65rem;
+    border: 1.5px solid #06fa40;
+    background: #010e01;
+    backdrop-filter: blus(1rem);
+    /* width: 100%; */
+}
+
+.skillsinfocard h5{
+    padding: 0.8rem 2rem;
+    background: linear-gradient(180deg,#06fa40 0%,#06f4a0 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #06f4a0;
+}
+
+.skillsinfocontent{
+    padding: 1.5rem 2rem;
+}
+
+.skillinfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0rem;
+}
+
+.skillinfo p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skillinfo .percentage{
+    color: #06f4a0;
+}
+
+.skillprogressbg{
+    width: 100%;
+    height: .5rem;
+    background: black;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.skillprogress{
+    width: 0%;
+    height: .5rem;
+    background: linear-gradient(90deg,#06fa40 -50%, #06f4a0 50%);
+    border-radius: .5rem;
+    transition: all 1s ease-in-out;
+}
+
+
+@media (max-width:768px) {
+
+    .skillinfo{
+        padding: .5rem;
+    }
+
+}
+
+
+@media(max-width:480px){
+    
+    .skillsinfocard h5{
+        padding: .5rem 2rem;
+    }
+
+    .skillsinfocontent{
+        padding: 1rem;
+    }
+
+    .skillinfo p{
+        font-size: 14px;
+    }
+
+    .skillprogressbg{
+        margin: .5em 0rem;
+    }
+}

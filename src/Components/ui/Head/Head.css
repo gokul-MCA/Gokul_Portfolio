@@ -10,6 +10,7 @@
     .custom-head{
         margin-bottom: 2rem;
         margin-left: 2rem;
+        margin-top: 1rem;
     }
 }
 
@@ -23,11 +24,12 @@
 @media (max-width:480px){
     .custom-head{
         margin-left: 3rem;
+        margin-bottom: 0rem;
         /* font-size: x-large; */
     }
 }
 
-@media (max-width:480px){
+@media (max-width:320px){
     .custom-head{
         margin-left: 2rem;
         font-size: larger;

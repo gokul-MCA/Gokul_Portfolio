@@ -5,6 +5,17 @@ h1 {
   filter: drop-shadow(0 0 .5em #0bf40a); 
 }
 
+.progress-bar {
+  position: fixed;
+  top: 0em;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background:#0bf40a;
+  transform-origin: 0%;
+  z-index: 1002;
+}
+
 
 /* @keyframes logo-spin {
   from {

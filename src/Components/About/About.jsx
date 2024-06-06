@@ -1,5 +1,5 @@
 import React from 'react'
-import './module.about.css';
+import styles from './about.module.css';
 import Head from '../ui/Head/Head';
 import { timelines } from '../../utils/data';
 
@@ -7,19 +7,19 @@ import { timelines } from '../../utils/data';
 
 const About = () => {
   return (
-    <section id="about">
+    <section id='about' className={styles.about}>
       <Head>About</Head>
-      <div className='timeline-container'> 
+      <div className={styles.timeline_container}> 
 
-      <div className='timelines'>
-      <span className='line'></span>
+      <div className={styles.timelines}>
+      <span className={styles.line}></span>
         {timelines.map(item => (
-          <div key={item.id} className={`container ${item.position}-container`}>
-            <div className="text-box">
+          <div key={item.id} className={`${styles.container} ${styles[item.position+"container"]}`}>
+            <div className={styles.textbox}>
               <h3>{item.title}</h3>
               <strong>{item.subtitle}</strong>
               <p>{item.description}</p>
-              <span className={`${item.position}-container-arrow`}></span>
+              <span className={`${styles[item.position+"containerarrow"]}`}></span>
             </div>
           </div>
         ))}

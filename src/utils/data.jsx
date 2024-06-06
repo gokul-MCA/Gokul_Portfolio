@@ -2,6 +2,12 @@ import ft from '../assets/frontend.png';
 import tl from '../assets/icons8-tools-50.png';
 import bk from '../assets/icons8-database-50.png';
 import pt from '../assets/WebDesigner.png';
+import py from '../assets/python.png'
+import py1 from '../assets/python_intermediate.jpg'
+import sql from '../assets/sql.jpg'
+import sql1 from '../assets/sql_intermediate.png'
+import pyd from '../assets/python_data_structure.jpg'
+import css from '../assets/intro_css.jpg'
 
 
 export const  SKILLS =[
@@ -10,9 +16,9 @@ export const  SKILLS =[
         icon:ft,
         skills:[
             { skill:"HTML5",percentage:"80%"},
-            { skill:"CSS3",percentage:"80%"},
+            { skill:"CSS3 & Tailwind CSS",percentage:"80%"},
             { skill:"JavaScript",percentage:"70%"},
-            { skill:"React.js",percentage:"70%"},
+            { skill:"React.js & Next.js",percentage:"70%"},
         ]
     },
     {
@@ -77,6 +83,7 @@ export const responsive = {
     }
 };
 
+
 export const productData=[
     {
         id:1,
@@ -108,3 +115,43 @@ export const productData=[
     },
     
 ]
+
+export const certificateData=[
+  {
+    id:1,
+    image: py1,
+    name: "Python Intermediate",
+    link:"https://www.sololearn.com/certificates/CC-YTOLSDCT"
+  },
+  {
+    id:2,
+    image: py,
+    name: "Python for Beginners",
+    link:"https://www.sololearn.com/certificates/CT-UDJCXACZ"
+  },
+  {
+    id:3,
+    image: sql1,
+    name: "SQL Intermediate",
+    link:"https://www.sololearn.com/certificates/CC-ICFYXBRG"
+  },
+  {
+    id:4,
+    image: sql,
+    name: "SQL",
+    link:"https://www.sololearn.com/certificates/CT-NEEUH2XO"
+  },
+  {
+    id:5,
+    image: pyd,
+    name: "Python Data Structures",
+    link:"https://www.sololearn.com/certificates/CT-7ALT7KRE"
+  },
+  {
+    id:6,
+    image: css,
+    name: "Introduction to CSS",
+    link:"https://www.sololearn.com/certificates/CC-HURVBETV"
+  }
+]
+

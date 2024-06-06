@@ -1,21 +1,21 @@
 import React from 'react'
-import './module.skillInfoCard.css'
+import styles from './skillInfoCard.module.css'
 
 const SkillInfoCard = ({heading,skills}) => {
   return (
-    <div className='skills-info-card'>
+    <div className={styles.skillsinfocard}>
         <h5>{heading}</h5>
 
-        <div className="skills-info-content">
+        <div className={styles.skillsinfocontent}>
           {skills.map((item,index) => (
-            <React.Fragment key={`skill_${index}`}>
-            <div className="skill-info">
+            <React.Fragment key={`${styles.skill}_${index}`}>
+            <div className={styles.skillinfo}>
               <p>{item.skill}</p>
-              <p className='percentage'>{item.percentage}</p>
+              <p className={styles.percentage}>{item.percentage}</p>
             </div>
             
-            <div className="skill-progress-bg">
-              <div className="skill-progress" style={{ width: item.percentage }}/>
+            <div className={styles.skillprogressbg}>
+              <div className={styles.skillprogress} style={{ width: item.percentage }}/>
             </div>
             </React.Fragment>
           ))}

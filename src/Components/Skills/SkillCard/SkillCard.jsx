@@ -1,12 +1,12 @@
 import React from 'react';
-import './module.skillCard.css';
+import styles from './skillCard.module.css';
 
 const SkillCard = ({title, iconUrl, isActive, onClick}) => {
   return (
-    <div className={`skills-card ${isActive ? 'active':''}`}
+    <div className={`${styles['skillscard']} ${isActive ? styles['active']:''}`}
     onClick={() => onClick()}
     >
-        <div className="skills-icon">
+        <div className={styles.skillsicon}>
             <img src={iconUrl} alt={title} />
         </div>
 

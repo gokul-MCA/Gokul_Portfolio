@@ -1,7 +1,7 @@
 import React,{ useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import './module.portfolio.css';
+import styles from './portfolio.module.css';
 import { IoLogoGithub } from "react-icons/io";
 import { productData } from '../../utils/data';
 import { responsive } from '../../utils/data';
@@ -11,16 +11,16 @@ import Head from '../ui/Head/Head';
 export default function Portfolio() {
   
       const Data=productData.map((item,index) => 
-       <div key={index} className="cards">
+       <div key={index} className={styles.cards}>
 
         <img src={item.imageUrl} alt={item.name} />
 
-        <div className="card-content">
+        <div className={styles.cardcontent}>
           <h4>{item.name}</h4>
-          <div className="card-content-contain">
+          <div className={styles.cardcontentcontain}>
             <p>{item.description}</p>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <IoLogoGithub className="font" />
+              <IoLogoGithub className={styles.font} />
             </a>
           </div>    
         </div>
@@ -28,11 +28,11 @@ export default function Portfolio() {
       )
 
   return (
-    <section id="portfolio">
+    <section id='portfolio' className={styles.portfolio}>
       <Head>Portfolio</Head>
-      <div className="cards-container">
+      <div className={styles.cardscontainer}>
 
-      <div className="cards-contain">
+      <div className={styles.cardscontain}>
         <Carousel responsive={responsive} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]}>
            {Data}
         </Carousel>

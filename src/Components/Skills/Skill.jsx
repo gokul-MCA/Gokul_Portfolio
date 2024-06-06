@@ -1,8 +1,8 @@
 import React , {useState} from 'react';
-import './module.skill.css';
+import styles from './skill.module.css';
 import { SKILLS } from '../../utils/data';
-import SkillCard from './SkillCard/SkillCard';
-import  SkillInfoCard  from './SkillInfoCard/SkillInfoCard';
+import SkillCard from './SkillCard/skillCard';
+import  SkillInfoCard  from './SkillInfoCard/skillInfoCard';
 import Head from '../ui/Head/Head';
 
 export const Skill = () => {
@@ -14,12 +14,12 @@ export const Skill = () => {
      };
 
   return (
-    <section id = 'skills'>
+    <section id ='skills'  className={styles.skillsclass}>
         <Head>Technical Proficiency</Head>
-        <div className="skills-top">
+        <div className={styles.skillstop}>
 
-        <div className="skills-container">
-            <div className="skills">
+        <div className={styles.skillscontainer}>
+            <div className={styles.skills}>
                 {SKILLS.map((item) => (
                     <SkillCard
                       key={item.title}
@@ -32,7 +32,7 @@ export const Skill = () => {
                     />
                 ))}
             </div>
-            <div className="skills-info">
+            <div className={styles.skillsinfo}>
               <SkillInfoCard
                  heading={selectedSkill.title}
                  skills={selectedSkill.skills}/>
