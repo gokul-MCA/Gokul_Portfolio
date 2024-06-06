@@ -1,8 +1,8 @@
 import './App.css'
-import Contact from './Components/Contact/Contact';
-import { Footer } from './Components/Footer/Footer';
+import Contact from './Components/Contact/contact';
+import { Footer } from './Components/Footer/footer';
 import { Intro } from './Components/Intro/intro';
-import { Navbar } from './Components/Navbar/Navbar';
+import { Navbar } from './Components/Navbar/navbar';
 import Portfolio from './Components/Portfolio/portfolio';
 import { Skill } from './Components/Skills/skill';
 import About from './Components/About/about';
