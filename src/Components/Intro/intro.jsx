@@ -3,7 +3,7 @@ import styles from './intro.module.css';
 import { Link } from 'react-scroll';
 import { FaBriefcase } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
-import Resume from '../../assets/Resume_Gokul_B.pdf';
+import Resume from '../../assets/Gokul_B_Resume.pdf';
 import Button from '../ui/Button/Button';
 import img from '../../assets/bg-removed-tinypng.png';
 import Typewriter from "typewriter-effect";

@@ -88,16 +88,16 @@ export const productData=[
     {
         id:1,
         imageUrl:pt,
-        name:"Portfolio",
+        name:"TypeWavePro",
         description:"React.js, HTML, CSS",
-        link:"https://github.com/gokul-MCA"
+        link:"https://github.com/gokul-MCA/typeWavePro"
     },
     {
-        id:2,
-        imageUrl:pt,
-        name:"Podcast",
-        description:"Next.js, React.js, Tailwind.css",
-        link:"https://github.com/gokul-MCA"
+      id:2,
+      imageUrl:pt,
+      name:"Portfolio",
+      description:"React.js, HTML, CSS",
+      link:"https://github.com/gokul-MCA/Gokul_Portfolio"
     },
     {
         id:3,
