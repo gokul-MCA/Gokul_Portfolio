@@ -64,7 +64,7 @@ export const Intro = () => {
            <div className={styles.btn}>
             <Link activeClass='active' to='contact' spy={true} smooth={true} 
              offset={90} duration={500}><Button className={styles.btnFont}><FaBriefcase  className={styles.btnFonts}/>Hire Me</Button></Link>
-            <a href={Resume} download='Resume'><Button className={styles.btnFont}><MdOutlineFileDownload className={styles.btnFonts}/>Resume</Button></a>
+            <a href={Resume} download='Gokul_B_Resume'><Button className={styles.btnFont}><MdOutlineFileDownload className={styles.btnFonts}/>Resume</Button></a>
            </div>
         </div>
 
